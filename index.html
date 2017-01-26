@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ARCHITECT</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/jquery-ui.min.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="owl-carusel/owl.carousel.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet/less" type="text/css" href="less/styles.less">
+    <link rel="Stylesheet" href="lightbox/css/lightbox.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="less/less.min.js"></script>
+    <script src="owl-carusel/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <div class="hid">
+        <!-- NAV BAR -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="navbar">
+                        <nav class="navbar navbar-default navbar-fixed-top"> <span id="start" class="line"></span>
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="#top-logo">
+                                        <div>
+                                            <p class="tekst1">Architect <img src="img/logo.png" /></p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#top">Home<span class="line"></span></a></li>
+                                        <li><a href="#work">Portfolio<span class="line"></span></a></li>
+                                        <li><a href="#services">Services<span class="line"></span></a></li>
+                                        <li><a href="#MeetTeam">Team<span class="line"></span></a></li>
+                                        <li><a href="#CEO2">CEO<span class="line"></span></a></li>
+                                        <li><a href="#clients">Clients<span class="line"></span></a></li>
+                                        <li><a href="#LBP">Blog<span class="line"></span></a></li>
+                                        <li><a href="#contact">Contact<span class="line"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $('#start').addClass('start');
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                    var heightMenu = (parseInt($("#top").outerHeight()) - parseInt($(".navbar").outerHeight()));
+                    $(window).scroll(function () {
+                        if (parseInt($(window).scrollTop()) >= heightMenu) {
+                            if (!$(".navbar").hasClass('navbar-black')) {
+                                $(".navbar").addClass('navbar-black');
+                            }
+                        }
+                        else if ($(".navbar").hasClass('navbar-black')) {
+                            $(".navbar").removeClass('navbar-black');
+                        }
+                    });
+                });
+            </script>
+        </div>
+        <!-- NAVBAR KONIEC -->
+        <!-- TOP -->
+        <div id="top" class="main-pad-b section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="top-logo" class="relative"><img src="img/logo.png" /> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p class="text1">Architect</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <p class="tekst2">best minimal experience</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"> </div>
+                </div>
+            </div>
+            <div id="facebook_slider_widget" style="display: none">
+                <script type="text/javascript" src="http://webfrik.pl/widget/facebook_slider.html?fb_url=https://www.facebook.com/buildnaturally&amp;fb_width=290&amp;fb_height=550&amp;fb_faces=true&amp;fb_stream=true&amp;fb_header=true&amp;fb_border=true&amp;fb_theme=light&amp;chx=787&amp;speed=SLOW&amp;fb_pic=sign&amp;position=LEFT"></script>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="owl1" class="owl-carousel owl-theme">
+                            <div class="item"><img src="img/owl1-1.jpg" alt="slide1"></div>
+                            <div class="item"><img src="img/owl1-2.jpg" alt="slide2"></div>
+                            <div class="item"><img src="img/owl1-3.jpg" alt="slide3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $("#owl1").owlCarousel({
+                        navigation: false, // Show next and prev buttons
+                        slideSpeed: 300
+                        , paginationSpeed: 400
+                        , singleItem: true
+                        , autoPlay: true
+                        , pagination: true
+                        , paginationNumbers: true
+                            // "singleItem:true" is a shortcut for:
+                            // items : 1, 
+                            // itemsDesktop : false,
+                            // itemsDesktopSmall : false,
+                            // itemsTablet: false,
+                            // itemsMobile : false
+                    });
+                });
+            </script>
+            <div id="ico1" class="main-pad main-pad-b effects">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center main-pad-bb"><span class="line"></span>
+                            <div class="main-pad-bb">
+                                <div class="circle text-center"><i class="fa fa-simplybuilt ver" aria-hidden="true"></i> </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h4>Responsive Design</h4>
+                                    <p>I'm freelance architect based in new york I work with great businesses to build wonderfull houses and interiors</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center main-pad-bb"><span class="line"></span>
+                            <div class="main-pad-bb">
+                                <div class="circle text-center"><i class="fa fa-wifi hor" aria-hidden="true"></i> </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h4>Retina Ready Icons</h4>
+                                    <p>I'm freelance architect based in new york I work with great businesses to build wonderfull houses and interiors</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center main-pad-bb"><span class="line"></span>
+                            <div class="main-pad-bb">
+                                <div class="circle text-center "><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> <span class="sr-only">Loading...</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h4>Parallax Background</h4>
+                                    <p>I'm freelance architect based in new york I work with great businesses to build wonderfull houses and interiors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TOP END -->
+        <!-- Our featured work-->
+        <div id="work" class="main-pad effects section section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="text-center main-pad-bb">
+                            <h3>Our featured work</h3>
+                            <div class="border-bottom"></div>
+                            <p>See some of my best work in this section, or check all of them</p>
+                        </div>
+                    </div>
+                    <div class="domy">
+                        <div class="row main-pad-bb">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="text-center">
+                                    <a href="img/1.jpg" data-lightbox="warszawa" title="projekt z Warszawy"><img src="img/1.jpg" alt="obrazek" class="img-responsive" /></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="text-center">
+                                    <a href="img/2.jpg" data-lightbox="warszawa" title="projekt z Łodzi"><img src="img/2.jpg" alt="obrazek" class="img-responsive" /></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="text-center">
+                                    <a href="img/3.jpg" data-lightbox="warszawa" title="projekt z Wrocławia"><img src="img/3.jpg" alt="obrazek" class="img-responsive" /></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="text-center">
+                                    <a href="img/4.jpg" data-lightbox="warszawa" title="projekt z Elbląga"><img src="img/4.jpg" alt="obrazek" class="img-responsive" /></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="text-center">
+                                    <a href="img/5.jpg" data-lightbox="warszawa" title="projekt z Lublina"><img src="img/5.jpg" alt="obrazek" class="img-responsive" /></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="text-center">
+                                    <a href="img/6.jpg" data-lightbox="warszawa" title="projekt z Nałęczowa"><img src="img/6.jpg" alt="obrazek" class="img-responsive" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  main-pad-b">
+                        <div class="text-center main-pad-t">
+                            <button class="button-alt">view all my work</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Our featured work END-->
+        <!--Services-->
+        <div id="services" class="main-pad main-pad-b effects section text-effect-l">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="text-center main-pad-bb">
+                            <h3 class="tekst1">Services</h3>
+                            <div class="border-bottom"></div>
+                            <p class="tekst2">Our aim is to make perfect architecture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="row main-pad-bb">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="text-center"><i class="fa fa-microchip" aria-hidden="true"></i><a><h4>Furniture Design</h4></a>
+                                <p>Tucked coquettishly over one ear was the freshly severed tail of a pig. In one hand he carried a medium-sized bow and an arrow.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="text-center"><i class="fa fa-grav" aria-hidden="true"></i><a><h4>Furniture Design</h4></a>
+                                <p>Tucked coquettishly over one ear was the freshly severed tail of a pig. In one hand he carried a medium-sized bow and an arrow.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="text-center"><i class="fa fa-podcast" aria-hidden="true"></i><a><h4>Furniture Design</h4></a>
+                                <p>Tucked coquettishly over one ear was the freshly severed tail of a pig. In one hand he carried a medium-sized bow and an arrow.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="text-center"><i class="fa fa-superpowers" aria-hidden="true"></i><a><h4>Furniture Design</h4></a>
+                                <p>Tucked coquettishly over one ear was the freshly severed tail of a pig. In one hand he carried a medium-sized bow and an arrow.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="text-center"><i class="fa fa-bed" aria-hidden="true"></i><a><h4>Furniture Design</h4></a>
+                                <p>Tucked coquettishly over one ear was the freshly severed tail of a pig. In one hand he carried a medium-sized bow and an arrow.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <div class="text-center"><i class="fa fa-ban" aria-hidden="true"></i><a><h4>Furniture Design</h4></a>
+                                <p>Tucked coquettishly over one ear was the freshly severed tail of a pig. In one hand he carried a medium-sized bow and an arrow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Services END-->
+        <!--Meet the team-->
+        <div id="MeetTeam" class="main-pad main-pad-b effects section  text-effect-r">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="text-center main-pad-bb">
+                            <h3 class="tekst1">Meet the team</h3>
+                            <div class="border-bottom"></div>
+                            <p class="tekst2">See the guys with special skills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 main-pad-bb">
+                        <div class="people">
+                            <div class="text-center main-pad-bb"><img src="img/a.png" /></div>
+                            <div class="text-center">
+                                <h3>John Doe</h3></div>
+                            <div class="text-center">
+                                <h4>senior architect</h4></div>
+                            <div class="text-center">
+                                <h5>I'm freelance architect based in new york I work with great businesses to build.</h5></div>
+                            <div class="text-center">
+                                <div class="square face"><i class="fa fa-facebook" aria-hidden="true"></i> </div>
+                                <div class="square twitt"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                <div class="square pin"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 main-pad-bb">
+                        <div class="people">
+                            <div class="text-center main-pad-bb"><img src="img/b.png" /></div>
+                            <div class="text-center">
+                                <h3>Rocky Balbo</h3></div>
+                            <div class="text-center">
+                                <h4>front end</h4></div>
+                            <div class="text-center">
+                                <h5>I'm freelance architect based in new york I work with great businesses to build.</h5></div>
+                            <div class="text-center">
+                                <div class="square face"><i class="fa fa-facebook" aria-hidden="true"></i> </div>
+                                <div class="square twitt"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                <div class="square pin"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 main-pad-bb">
+                        <div class="people">
+                            <div class="text-center main-pad-bb"><img src="img/c.png" /></div>
+                            <div class="text-center">
+                                <h3>Hansome Rob</h3></div>
+                            <div class="text-center">
+                                <h4>architect</h4></div>
+                            <div class="text-center">
+                                <h5>I'm freelance architect based in new york I work with great businesses to build.</h5></div>
+                            <div class="text-center">
+                                <div class="square face"><i class="fa fa-facebook" aria-hidden="true"></i> </div>
+                                <div class="square twitt"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                <div class="square pin"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 main-pad-bb">
+                        <div class="people">
+                            <div class="text-center main-pad-bb"><img src="img/d.png" /></div>
+                            <div class="text-center">
+                                <h3>Billy Cosby</h3></div>
+                            <div class="text-center">
+                                <h4>management</h4></div>
+                            <div class="text-center">
+                                <h5>I'm freelance architect based in new york I work with great businesses to build.</h5></div>
+                            <div class="text-center">
+                                <div class="square face"><i class="fa fa-facebook" aria-hidden="true"></i> </div>
+                                <div class="square twitt"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                <div class="square pin"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Meet the team END-->
+        <!--CEO2-->
+        <div id="CEO2" class="main-pad effects section section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-pad-bb">
+                        <div class="col-first">
+                            <div id="tabs">
+                                <ul>
+                                    <li><a class="tabs-h" href="#tabs-1">Studies</a></li>
+                                    <li><a class="tabs-h" href="#tabs-2">Design</a></li>
+                                    <li><a class="tabs-h" href="#tabs-3">Delivery</a></li>
+                                    <li><a class="tabs-h " href="#tabs-4">Support</a></li>
+                                </ul>
+                                <div id="tabs-1" class="form-p">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="img/table-1.jpg" class="img-responsive" /></div>
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                            <p>Broad on both bows, at the distance of some two or three miles, and forming a great semicircle, embracing one half of the level horizon, a continuous chain of whale-jets were up-playing.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="img/table-2.jpg" class="img-responsive" /> </div>
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                            <p>Broad on both bows, at the distance of some two or three miles, and forming a great semicircle, embracing one half of the level horizon, a continuous chain of whale-jets were up-playing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tabs-2" class="form-p">
+                                    <p>Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.</p>
+                                </div>
+                                <div id="tabs-3" class="form-p">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="img/table-1.jpg" class="img-responsive" /></div>
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                            <p>Broad on both bows, at the distance of some two or three miles, and forming a great semicircle, embracing one half of the level horizon, a continuous chain of whale-jets were up-playing.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> <img src="img/table-2.jpg" class="img-responsive" /> </div>
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                            <p>Broad on both bows, at the distance of some two or three miles, and forming a great semicircle, embracing one half of the level horizon, a continuous chain of whale-jets were up-playing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tabs-4" class="form-p">
+                                    <p>Bacon ipsum dolor sit amet landjaeger sausage brisket, jerky drumstick fatback boudin ball tip turducken. Pork belly meatball t-bone bresaola tail filet mignon kevin turkey ribeye shank flank doner cow kielbasa shankle. Pig swine chicken hamburger, tenderloin turkey rump ball tip sirloin frankfurter meatloaf boudin brisket ham hock. Hamburger venison brisket tri-tip andouille pork belly ball tip short ribs biltong meatball chuck. Pork chop ribeye tail short ribs, beef hamburger meatball kielbasa rump corned beef porchetta landjaeger flank. Doner rump frankfurter meatball meatloaf, cow kevin pork pork loin venison fatback spare ribs salami beef ribs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $(function () {
+                                $("#tabs").tabs();
+                            });
+                        </script>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="col-second">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <div>
+                                        <p>a word from ceo of Architect</p>
+                                    </div>
+                                    <div class="border-bottom"></div>
+                                    <div>
+                                        <h3>Krzysztof Boro</h3></div>
+                                    <p>ceo of Architect</p>
+                                    <p>Broad on both bows, at the distance of some two or three miles, and forming a great semicircle, embracing one half of the level horizon, a continuous chain of whale-jets were up-playing.</p>
+                                    <div><img src="img/sign.png" /></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right"><img src="img/ziom.png" class="img-responsiv" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CEO2 END-->
+        <!--Clients-->
+        <div id="clients" class="main-pad main-pad-b text-centerclass effects section section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="text-center">
+                            <h3 class="tekst1">Clients</h3> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img text-center">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center item"><img src="img/1-hover.png" class="img-responsive" /></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center item"><img src="img/2-hover.png" class="img-responsive" /></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center item"><img src="img/4-hover.png" class="img-responsive" /></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="text-center item"><img src="img/5-hover.png" class="img-responsive" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!--Clients END-->
+    <!--LBP-->
+    <div id="LBP" class="main-pad main-pad-b effects section section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="text-center main-pad-bb">
+                        <h3 class="tekst1">Latest blog posts</h3>
+                        <div class="border-bottom"></div>
+                        <p class="tekst2">Our aim is to make perfect architecture</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="row main-pad-b">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-pad-bb">
+                        <div class="border">
+                            <div class="hidd"><img src="img/x.jpg" class="img-responsive" /></div>
+                            <div class="padd">
+                                <h4 class="main-pad-bb">Blog Post Title 01</h4>
+                                <p class="opa">15/05/2016, by admin, 15 comments</p>
+                                <p>A general term to describe buildings and other physical structures. The art and science of designing buildings and (some) nonbuilding structures...</p>
+                                <div class="text-center main-pad-bb">
+                                    <button class="button-alt">read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-pad-bb">
+                        <div class="border">
+                            <div class="hidd"><img src="img/y.jpg" class="img-responsive" /></div>
+                            <div class="padd">
+                                <h4 class="main-pad-bb">Blog Post Title 02</h4>
+                                <p class="opa">16/06/2016, by admin, 15 comments</p>
+                                <p>A general term to describe buildings and other physical structures. The art and science of designing buildings and (some) nonbuilding structures...</p>
+                                <div class="text-center main-pad-bb">
+                                    <button class="button-alt">read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 main-pad-bb">
+                        <div class="border">
+                            <div class="hidd"><img src="img/z.jpg" class="img-responsive" /></div>
+                            <div class="padd">
+                                <h4 class="main-pad-bb">Blog Post Title 03</h4>
+                                <p class="opa">17/07/2016, by admin, 15 comments</p>
+                                <p>A general term to describe buildings and other physical structures. The art and science of designing buildings and (some) nonbuilding structures...</p>
+                                <div class="text-center main-pad-bb">
+                                    <button class="button-alt">read more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--LBP END-->
+    <!--testimonials -->
+    <div class="hidden-xs">
+        <div id="testimonials" class="main-pad main-pad-b text-center effects section section2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="text-center">
+                            <div class="inBlack">
+                                <h3 class="tekst1">Testimonials</h3></div>
+                            <div id="owl2" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <p class="tekst2">1. Design is not making beauty, beauty emerges from selection, affinities, integration, love.</p>
+                                    <div>
+                                        <h5>Louis Kahn</h5></div>
+                                </div>
+                                <div class="item">
+                                    <p class="tekst2">2. Design is not making beauty, beauty emerges from selection, affinities, integration, love.</p>
+                                    <div>
+                                        <h5>Louis Kahn</h5></div>
+                                </div>
+                                <div class="item">
+                                    <p class="tekst2">3. Design is not making beauty, beauty emerges from selection, affinities, integration, love.</p>
+                                    <div>
+                                        <h5>Louis Kahn</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="lightbox/js/lightbox.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#owl2").owlCarousel({
+                        navigation: true, // Show next and prev buttons
+                        slideSpeed: 300
+                        , paginationSpeed: 400
+                        , singleItem: true
+                        , navigationText: ['<i class="fa fa-arrow-left" aria-hidden="true"></i>', '<i class="fa fa-arrow-right" aria-hidden="true"></i>']
+                            // "singleItem:true" is a shortcut for:
+                            // items : 1, 
+                            // itemsDesktop : false,
+                            // itemsDesktopSmall : false,
+                            // itemsTablet: false,
+                            // itemsMobile : false
+                    });
+                });
+            </script>
+        </div>
+    </div>
+    <!--testimonials END-->
+    <!--counters END-->
+    <div id="counters" class="main-pad main-pad-b effects section section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="text-center main-pad-b">
+                        <h3 class="tekst1">Pricing</h3>
+                        <div class="border-bottom"></div>
+                        <p class="tekst2">special price for You!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center main-pad-b"> <img src="img/1.jpg" class="img-responsive" />
+                    <div class="back">
+                        <h1 class="count">11200</h1>
+                        <p>zł.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center main-pad-b"> <img src="img/2.jpg" class="img-responsive" />
+                    <div class="back">
+                        <h1 class="count">24500</h1>
+                        <p>zł.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center main-pad-b"> <img src="img/3.jpg" class="img-responsive" />
+                    <div class="back">
+                        <h1 class="count">9800</h1>
+                        <p>zł.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--countersEND-->
+    <!--Coment-->
+    <div id="coment" class="main-pad main-pad-b effects section section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        /**
+                         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                        /*
+                        var disqus_config = function () {
+                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        */
+                        (function () { // DON'T EDIT BELOW THIS LINE
+                            var d = document
+                                , s = d.createElement('script');
+                            s.src = '//architektura-test.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Coment END-->
+    <!--CONTACT-->
+    <div id="contact" class="main-pad main-pad-b effects section section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div class="text-center main-pad-b">
+                        <h3 class="tekst1">Write your message here</h3>
+                        <div class="border-bottom"></div>
+                        <p class="tekst2">Our aim is to make perfect architecture</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-center">
+                    <form>
+                        <div class="row top">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInput1" placeholder="Your Name*"> </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Your Email*"> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+                                <button href="#" class="button-alt">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p>Tel 0 800 125 556 8944 0 800 125 556 8945</p>
+                    <p>Email <a href="mailto:info@architect.com">info@architect.com</a></p>
+                    <p>Address: Moby Dick Street, Nr.258 NY USA James Parkinson Street, Nr. 11 TO Canada</p>
+                    <p>Web: <a>www.yourarchitect.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTACT END-->
+    <!--Foot-->
+    <div id="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="text-center main-pad-bb">
+                        <div class="circ face"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                        <div class="circ twitt"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                        <div class="circ pin"><i class="fa fa-pinterest" aria-hidden="true"></i></div>
+                        <div class="circ bal"><i class="fa fa-dribbble" aria-hidden="true"></i></div>
+                        <div class="circ va"><i class="fa fa-vimeo-square" aria-hidden="true"></i> </div>
+                        <div class="circ yt"><i class="fa fa-youtube" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="text-center">
+                        <!-- Like -->
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmichal.codeline.pl%2F&width=450&layout=standard&action=like&show_faces=true&share=true&height=80&appId" width="auto" height="40" style="border:none;overflow:hidden;text-align:center" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="text-center main-pad-bb">
+                        <p class="tekst2">Designed by Michał Drob. 2016 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Foot END -->
+    <script src="js/scripts.js"></script>
+    <!-- Google.analitics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-89127809-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script id="dsq-count-scr" src="//architektura-test.disqus.com/count.js" async></script>
+</body>
+
+</html>
