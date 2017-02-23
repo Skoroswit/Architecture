@@ -86,7 +86,7 @@ function activeElementMenu() {
 }
 
 
-less.pageLoadFinished.then(function () {
+
 
     // COUNTERS (pobranie wysokości elementów)
     //var positionsCounters = $("#counters").position();
@@ -147,4 +147,3 @@ less.pageLoadFinished.then(function () {
         return false;
     });
     
- });
